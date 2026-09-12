@@ -2,14 +2,12 @@
 import Navbar from "@/components/navbar";
 import { AlgorithmCards } from "./components/algorithm-cards";
 import Footer from "./components/footer";
-import Hero from "./components/hero";
 
 export default function Page() {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
       <div className="absolute inset-0 bg-geometric-grid bg-grid-size opacity-10 pointer-events-none"></div>
       <Navbar title="Advanced DSA Canvas"/>
-      <Hero/>
       <header className="border-b-2 border-foreground bg-background text-foreground relative z-10">
         <div className="container mx-auto py-16 px-4 text-center">
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl uppercase">
