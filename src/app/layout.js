@@ -1,28 +1,14 @@
-import localFont from "next/font/local";
-import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import './globals.css';
 
 export const metadata = {
-  title: "Algorithm Visualizer",
-  description: "Explore and learn algorithms through visualization.",
+  title: 'Advanced DSA Canvas',
+  description: 'Interactive structural visualizations for dynamic programming, sliding windows, and complex graph traversals.',
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className="dark">
+      <body className="antialiased">
         {children}
       </body>
     </html>
